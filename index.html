@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Quattrocento+Sans:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Minimal</title>
+</head>
+
+<body>
+    <header class="header">
+        <strong class="nav__bar--logo">Minimal.</strong>
+
+        <button class="mobile__nav-toggle" aria-controls="primary__navigation" aria-expanded="false">
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+        <nav class="nav__bar">
+            <ul id="primary__navigation" data-visible="false" class="nav__bar--items">
+                <li><a href="#home" class="nav__bar--item">Home</a></li>
+                <li><a href="#aboutUs" class="nav__bar--item">About us</a></li>
+                <li><a href="#services" class="nav__bar--item">Services</a></li>
+                <li><a href="#gallery" class="nav__bar--item">Gallery</a></li>
+                <li><a href="#contact" class="nav__bar--item">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1 class="home--title">
+                Make your enviroment <span>the purest form of beauty</span>
+            </h1>
+        </section>
+
+        <section id="aboutUs">
+            <h1 class="container__title">ABOUT US</h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus
+                dolore quae odio fuga dolores unde ex id et numquam? Amet sunt quae
+                perspiciatis eum exercitationem, ab debitis praesentium officia
+                perferendis.
+            </p>
+            <br />
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+                enim architecto veniam debitis nihil recusandae dolor dignissimos
+                repellat distinctio voluptatem.
+            </p>
+        </section>
+
+        <section id="services">
+            <div class="services__title">
+                <h1 class="container__title">OUR SERVICES</h1>
+            </div>
+            <div class="services__items">
+                <div class="services__item">
+                    <ion-icon name="checkmark-circle-sharp"></ion-icon>
+                    <h2>Planning</h2>
+                </div>
+                <div class="services__item">
+                    <ion-icon name="checkmark-circle-sharp"></ion-icon>
+                    <h2>Design</h2>
+                </div>
+
+                <div class="services__item">
+                    <ion-icon name="checkmark-circle-sharp"></ion-icon>
+                    <h2>Building</h2>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h1 class="container__title">LATEST PROJECTS</h1>
+
+            <div class="gallery__track--container" data-gallery>
+                <ul class="gallery__track" data-slides>
+                    <li class="gallery__slide" data-active>
+                        <img class="gallery__slide--img" src="images/hugo-sousa-BghGseQbAkA-unsplash.jpg"
+                            alt="img-minimalist-architecture" loading="lazy" />
+                    </li>
+
+                    <li class="gallery__slide">
+                        <img class="gallery__slide--img" src="images/pixasquare-4ojhpgKpS68-unsplash.jpg"
+                            alt="img-minimalist-architecture" loading="lazy" />
+                    </li>
+
+                    <li class="gallery__slide">
+                        <img class="gallery__slide--img" src="images/ricardo-gomez-angel-8aGlPjt5LvE-unsplash.jpg"
+                            alt="img-minimalist-architecture" loading="lazy" />
+                    </li>
+                </ul>
+
+                <button class="gallery__btns gallery__btn--right" data-btn="right">
+                    <ion-icon name="chevron-forward"></ion-icon>
+                </button>
+
+                <button class="gallery__btns gallery__btn--left" data-btn="left">
+                    <ion-icon name="chevron-back"></ion-icon>
+                </button>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact__title">
+                <h1 class="container__title">CONTACT US</h1>
+            </div>
+
+            <div class="contact__items">
+                <div class="contact__item--question">
+                    <h2 class="contact__item--question__title">
+                        Do you have a question?
+                    </h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                        corrupti, sit ullam numquam obcaecati architecto quos rerum porro
+                        a aspernatur.
+                    </p>
+                    <br />
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
+                        quaerat velit atque libero, sapiente deleniti!
+                    </p>
+                    <br />
+                    <h2 class="contact__item--question__phone">555 123 456</h2>
+                </div>
+
+                <div class="contact__item--info">
+                    <form action="">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="name last name" required />
+
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder=" name@mail.com" required />
+
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="20" rows="5" required></textarea>
+
+                        <button class="contact__info--btn">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="footer__social-media">
+            <a href="#">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+
+            <a href="#">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="#">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="#">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+        </div>
+
+        <div class="footer__icon">
+            <h3>MINIMAL</h3>
+            <p>© Copyright <span class="year"> 2022</span></p>
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>
